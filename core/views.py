@@ -34,9 +34,9 @@ def login_view(request):
             login(request, user)
             return redirect('/')
         else:
-            return render(request, "login.html", {"error": "Usuario o contraseña incorrectos"})
+            return render(request, "core/login.html", {"error": "Usuario o contraseña incorrectos"})
 
-    return render(request, "login.html")
+    return render(request, "core/login.html")
 
 
 def logout_view(request):
